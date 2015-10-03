@@ -82,25 +82,25 @@ header {
   background-color: purple;
 }
 
-#logo {
+#letras {
   float: left;
   width: 350px;
   padding: 40px 0 0 50px;
   text-transform: uppercase;
 }
 
-#logo h1 {
+#letras h1 {
   padding: 5px 10px 0 0;
 }
 
-#logo h1 a {
+#letras h1 a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 300;
   color: #FFFFFF;
 }
 
-#logo p {
+#letras p {
   display: block;
   margin-top: -10px;
   padding: 0;
@@ -109,7 +109,7 @@ header {
   color: #FFFFFF;
 }
 
-#logo p a {
+#letras p a {
   color: #FFFFFF;
 }
 
@@ -269,16 +269,6 @@ ul.style2 a:hover {
   text-decoration: underline;
 }
 
-.button-style {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 7px 20px;
-  background: #E8B51C;
-  border-radius: 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
 
 form{
 background: gray;
