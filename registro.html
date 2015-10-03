@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Mi Sitio | Antonio Saldaña</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" />
+  <title>Proyecto 1er Parcial Tellez</title>
+
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="font-awesome-4.0.2/css/font-awesome.min.css" />
+
 </head>
 <body>
   <div id="wrapper">
     <header>
       <div id="logo">
-        <h1><a href="#">Academico</a></h1>
+          <h1><a href="#">Registro</a></h1>
       </div><!-- logo -->
       <nav>
         <ul>
@@ -24,29 +24,54 @@
   </header>
     <section id="page">
       <article id="content">
-        <h2>Sega</h2>
-  <p> <a href="https://www.sega.com/"><img src="images/horario.jpg" width="700" height="189"214alt="Sega" title="Sega"/></a>
+
   <h2>Registro</h2>
   <body>
-        <form>
-          Nombre: <input type="text" name="first_name"/><br/>
-          Apellido Paterno: <input type="text" name="last_name"/><br/>
-          Apellido Materno: <input type="text" name="last_name"/><br/>
-          Seleccione genero: <br>
-          <input type="radio" name="sex" value="Hombre">Hombre<br/>
-          <input type="radio" name="sex" value="Mujer">Mujer<br/>
-          Ciudad:
-          <select name = "Country">
-            <option value = "EU">EU</option>
-            <option value = "Chihuahua">Chihuahua</option>
-            <option value = "Francia">Francia</option>
-          </select><br/>
-          <!--Email: <input type="text" name="email">
-          Contraseña: <input type="password" name="pwd">-->
-          <!--<form name="input" action="demo_form_action.asp" method="get">-->
-          <!--Usuario: <input type="text" name="user">-->
-           <input type="submit" value="Enviar">
-        </form>
+    <form action="http://andreihelo-sinatra.herokuapp.com/contact" class="formas" action="index.html" method="post">
+      <fieldset>
+        <legend>Informacion personal:<br></legend>
+      Nombre:<br>
+      <input type="text" name="person[name]"><br>
+
+      Sexo:<br>
+      <input type="radio" name="person[genre]" value="masculino">Masculino
+      <br>
+      <input type="radio" name="person[genre]" value="femenino">Femenino
+      <br>
+
+      Fecha de nacimiento:<br/>
+        <input type="date" placeholder="dd/mm/aaaa" name="person[birthdate]"/><br/>
+
+
+      Ciudad de Origen: <br/>
+        <input list="ciudad" name="person[city]">
+        <datalist id="ciudad">
+
+
+        <option value="aguascalientes">Aguas Caliente</option>
+        <option value="chihuahua">Chihuahua</option>
+        <option value="durango" >Durango</option>
+        <option value="distrito federal">Distrito Federal</option>
+        </datalist>
+      <br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Preferencias:</legend>
+      Selecciones una o mas:<br/>
+      <input type="checkbox" name="person[preferences][]" value="codigo">Me gusta programar mas de 1 hr al dia
+      <br>
+      <input type="checkbox" name="person[preferences][]" value="videojuegos">Tengo al menos 1 consola y mas de 1 juego
+      <br>
+      <input type="checkbox" name="person[preferences][]" value="gadgets">Leo sobre los ultimos gadgets del momento
+      <br><br><br>
+
+      Escríbenos:<br>
+
+      <textarea name="message" placeholder="Escribenos algo"rows="10" cols="30"></textarea>
+      </fieldset>
+
+      <input type="submit" name="submit" value="Enviar">
+    </form>
 </body>
 </html>
 
@@ -56,22 +81,26 @@
       </article><!-- content -->
       <aside>
         <div id="one">
-          <h2>Mas informacion de Ricardo</h2>
+          <h2>Mas informacion </h2>
           <ul class="style1">
             <li class="first">
-              <h3>COMIDAS FAVORITA</h3>
-              <p>Sus comidas favoritas son  las pizzas y los tacos dorados </p>
+              <h3>Acceso</h3>
+              <p>Puedes acceder sin registrarte a paginas de la uach </p>
+              <p>
+                <a href="http://www.uach.mx">Uach</a>
+              </p>
             </li>
             <li>
-              <h3>EQUIPO FAVORITO</h3>
-              <p> <img src="yankees.png" alt="beis" /></p>
+              <h3>LOGO</h3>
+              <p> <img src=" images/uach.jpe" alt="beis" /></p>
             </li>
             <li>
               <h3>EQUIPOS REPRESENTATIVOS</h3>
-              <p>BEISBOL <i>DF</i></p>
-              <p>BEISBOL <i>IPN</i></p>
-              <p>BEISBOL <i>UACH</i></p>
-              <p>PING PONG <i>DF</i></p>
+              <p>BEISBOL </p>
+              <p>FUTBOL </p>
+              <p>FUTBOL FEMENIL </p>
+              <p>PING PONG </p>
+              <p>kARATE</p>
             </li>
             <li>
               <h3> REDES SOCIALES</h3>
@@ -94,13 +123,13 @@
           <section id="three-columns">
             <article id="one">
               <h2>Rector UACH</h2>
-              <p><img src="rector.jpg" width="300" height="150" /></p>
+              <p><img src="images/rector.jpg" width="300" height="150" /></p>
 
 
             </article><!-- one -->
             <article id="two">
               <h2>ADELITAS</h2>
-              <p><img src="adelitas.jpg" width="321" height="214"/></p>
+              <p><img src="images/adelitas.jpg" width="321" height="214"/></p>
               <p>Unete algun equipo de la Universidad para obtener bec as y descuentos en tus pagos academicos</p>
 
             </article>
